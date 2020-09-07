@@ -1,0 +1,63 @@
+title: 'Blog Posts'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          type: assets
+          listable: hidden
+          display: 'Featured Image'
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: blog_categories
+        field:
+          type: terms
+          taxonomies:
+            - blog_categories
+          display: 'Blog Categories'
+          mode: default
+          listable: hidden
+          max_items: 1
+      -
+        handle: blog_tags
+        field:
+          type: terms
+          taxonomies:
+            - blog_tags
+          display: 'Blog Tags'
+          mode: select

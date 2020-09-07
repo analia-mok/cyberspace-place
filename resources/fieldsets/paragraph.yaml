@@ -1,0 +1,8 @@
+title: Paragraph
+fields:
+  -
+    handle: content
+    field:
+      type: html
+      listable: hidden
+      display: Content

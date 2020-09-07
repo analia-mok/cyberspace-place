@@ -1,0 +1,20 @@
+title: 'Lead Unit'
+fields:
+  -
+    handle: lead_title
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: 'Lead Title'
+  -
+    handle: lead_body
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      type: markdown
+      listable: hidden
+      display: 'Lead Body'
