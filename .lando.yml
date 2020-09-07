@@ -1,0 +1,4 @@
+name: cyberspace-plane
+recipe: laravel
+config:
+  webroot: public
